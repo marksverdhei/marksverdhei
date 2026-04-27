@@ -1,5 +1,8 @@
 Hi i stream on twitch.tv and youtube.  
 
+https://www.twitch.tv/hyperplane_t
+https://www.youtube.com/@marksverdhei
+
 My dayjob is at the National Library of Norway training LLMs.
 
 Look at this gif  
