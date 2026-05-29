@@ -17,8 +17,6 @@
 
 LLM engineer at the **[National Library of Norway](https://github.com/NationalLibraryOfNorway)**, where I help pretrain, post-train and evaluate Norwegian large language models. Off the clock I run **[Heiervang Technologies](https://github.com/heiervang-technologies)**, an open-source lab for AI agents, inference tooling, and forks of the libraries I use daily. MSc in Informatics (NLP) from the University of Oslo. I also stream the whole process on Twitch and YouTube.
 
-My work spans the full model lifecycle: **data → training → quantization → serving → evaluation → agents**.
-
 ---
 
 ### 🌍 Open-source contributions
@@ -34,10 +32,7 @@ Plus smaller fixes to **[NVIDIA/Megatron-LM](https://github.com/NVIDIA/Megatron-
 
 ---
 
-### 🎯 What I work on
-
-I get **brand-new models running on open inference stacks**, then handle the lifecycle around them (quantize, serve, evaluate, and wrap in agents).
-
+I ❤️ open-source. Contributions:
 * 🚀 **Model enablement & inference:** Bringing new architectures (GLM-4.7, Qwen3-Omni/TTS, GPT-OSS) up in **vLLM**, **vllm-omni** & **🤗 transformers**.
 * 🧮 **Quantization:** FP8, MXFP4 & GGUF to squeeze large models onto smaller and **non-NVIDIA GPUs** (Vulkan, ZLUDA).
 * 🗣️ **Speech, voice & audio:** Speaker/voice embeddings, TTS, ASR, music generation.
