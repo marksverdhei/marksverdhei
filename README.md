@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <em>Teaching transformers to predict the next token.</em>
+  <em>Making clankers think and GPUs go BRRR</em>
 </p>
 
 <p align="center">
