@@ -13,6 +13,7 @@
   <a href="https://www.twitch.tv/hyperplane_t"><img src="https://img.shields.io/badge/Twitch-hyperplane__t-9146FF?logo=twitch&logoColor=white"></a>
   <a href="https://www.youtube.com/@marksverdhei"><img src="https://img.shields.io/badge/YouTube-marksverdhei-FF0000?logo=youtube&logoColor=white"></a>
   <img src="https://img.shields.io/badge/Based%20in-Norway-2f6feb">
+  <a href="https://marksverdhei.github.io/marksverdhei/github-wrapped-2025.html"><img src="https://img.shields.io/badge/2025-Wrapped-f107a3"></a>
 </p>
 
 ---
