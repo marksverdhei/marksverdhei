@@ -4,9 +4,11 @@
   <img src="https://github.com/marksverdhei/marksverdhei/blob/main/3d.gif?raw=true" width="320" alt="Rotating dog.">
 </p>
 
+
 <p align="center">
   <em>Making clankers think and GPUs go BRRR</em>
 </p>
+
 
 <p align="center">
   <a href="https://huggingface.co/marksverdhei"><img src="https://img.shields.io/badge/Hugging%20Face-marksverdhei-FFD21E?logo=huggingface&logoColor=black"></a>
@@ -22,7 +24,10 @@
 
 LLM engineer at the **[National Library of Norway](https://github.com/NationalLibraryOfNorway)**, where I help pretrain, post-train and evaluate Norwegian large language models, most recently the **Borealis** family. Off the clock I run **[Heiervang Technologies](https://github.com/heiervang-technologies)**, an open-source lab for AI agents, inference tooling, and forks of the libraries I use daily. MSc in Informatics (NLP) from the University of Oslo. I stream a lot of the process on Twitch and YouTube.
 
-My work spans the full model lifecycle: data → training → quantization → serving → evaluation → agents.
+<p align="center">
+  <img width="600" height="400" alt="hover-trail-600" src="https://github.com/user-attachments/assets/f7720ed7-b304-4d66-9246-829f93033d5b" />
+</p>
+
 
 ---
 
