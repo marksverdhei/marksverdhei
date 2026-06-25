@@ -1,0 +1,68 @@
+name: Sync domain index
+
+# Pulls sites.js from the live landing site and regenerates the section
+# between <!-- DOMAINS:START --> and <!-- DOMAINS:END --> in README.md.
+# Runs daily and on demand. The landing repo is private; we read sites.js
+# from the public production deploy (https://retard.mx/sites.js) instead.
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-domains
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Regenerate domain index
+        run: |
+          set -euo pipefail
+          curl -fsSL --max-time 30 https://retard.mx/sites.js -o /tmp/sites.js
+          python3 - <<'PY'
+          import re, pathlib, sys
+          src = open("/tmp/sites.js").read()
+          # Match top-level SITES entries: lines like   "domain.tld": ...
+          domains = sorted(set(re.findall(r'^\s*"([a-z0-9][a-z0-9.-]*\.[a-z]{2,})"\s*:', src, re.M)))
+          # Safety: refuse to regenerate if the parse looks broken.
+          if len(domains) < 5:
+              sys.exit(f"parse failed — only {len(domains)} domains extracted")
+          links = " · ".join(f"[{d}](https://{d})" for d in domains)
+          block = (
+              "<!-- DOMAINS:START -->\n"
+              + links
+              + f"\n\n_{len(domains)} domains · synced from [`sites.js`](https://retard.mx/sites.js)._\n"
+              + "<!-- DOMAINS:END -->"
+          )
+          readme = pathlib.Path("README.md")
+          updated = re.sub(
+              r"<!-- DOMAINS:START -->.*?<!-- DOMAINS:END -->",
+              lambda _m: block,
+              readme.read_text(),
+              count=1,
+              flags=re.S,
+          )
+          if "<!-- DOMAINS:START -->" not in updated:
+              sys.exit("markers missing from README.md — refusing to write")
+          readme.write_text(updated)
+          PY
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet README.md; then
+            echo "no change"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "domains: sync index from live sites.js"
+          git push

@@ -107,6 +107,21 @@ A running index of my public work. (HT = under [Heiervang Technologies](https://
 
 ---
 
+<details>
+<summary><h3>🌐 Domains I hoard</h3></summary>
+
+A live index of every domain pointed at the placeholder slam page. All of them serve the same animated frontend; the keys of [`sites.js`](https://retard.mx/sites.js) are the source of truth, and the list below is regenerated daily from it.
+
+<!-- DOMAINS:START -->
+[bomboc.lat](https://bomboc.lat) · [clanker.cam](https://clanker.cam) · [clanker.foundation](https://clanker.foundation) · [clanker.productions](https://clanker.productions) · [clanker.surf](https://clanker.surf) · [clanker.wiki](https://clanker.wiki) · [cssus.live](https://cssus.live) · [hei.ceo](https://hei.ceo) · [hei.codes](https://hei.codes) · [hei.expert](https://hei.expert) · [hei.tools](https://hei.tools) · [heiervang.com](https://heiervang.com) · [heiervang.tech](https://heiervang.tech) · [hover.dog](https://hover.dog) · [hoverboard.dog](https://hoverboard.dog) · [hyperpla.net](https://hyperpla.net) · [marku.sh](https://marku.sh) · [markus.consulting](https://markus.consulting) · [markus.sh](https://markus.sh) · [markus.solutions](https://markus.solutions) · [markus.work](https://markus.work) · [opensourcefriendly.dev](https://opensourcefriendly.dev) · [ossfriendly.dev](https://ossfriendly.dev) · [pkill.games](https://pkill.games) · [pkill.io](https://pkill.io) · [pkill.live](https://pkill.live) · [pkill.sh](https://pkill.sh) · [pkill.space](https://pkill.space) · [pkill.team](https://pkill.team) · [retard.mx](https://retard.mx) · [rugpull.in](https://rugpull.in) · [savethe.click](https://savethe.click) · [turingtest.fm](https://turingtest.fm) · [turingtest.music](https://turingtest.music)
+
+_34 domains · synced from [`sites.js`](https://retard.mx/sites.js)._
+<!-- DOMAINS:END -->
+
+</details>
+
+---
+
 ### On the Hugging Face Hub
 
 **31 models · 7 datasets · 6 spaces · 490 likes · 220k+ all-time downloads**
