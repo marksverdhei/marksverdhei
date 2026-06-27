@@ -35,7 +35,7 @@ LLM engineer at the **[National Library of Norway](https://github.com/NationalLi
 
 **[Borealis](https://huggingface.co/NbAiLab):** The National Library of Norway's newly released family of Norwegian language models. Built on Gemma 3, spanning 270M to 27B parameters, vision-language capable, fluent in Bokmål and Nynorsk, and shipped in open and full-data variants with GGUF and MLX builds. I'm part of the team behind it.
 
-**[unleash](https://github.com/heiervang-technologies/unleash):** A Rust harness for running coding agents autonomously. (⭐ 14)
+**[unleash](https://github.com/heiervang-technologies/unleash):** One TUI/CLI for all your agent harnesses. (⭐ 14)
 
 ---
 
